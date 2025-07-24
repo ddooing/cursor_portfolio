@@ -20,10 +20,65 @@ import {
   DetailItem,
   DetailTitle,
   DetailContent,
-  DetailPeriod
+  DetailPeriod,
+  ProjectSection,
+  ProjectItem,
+  ProjectTitle,
+  ProjectSubSection,
+  ProjectSubTitle,
+  ProjectInfo,
+  ProjectInfoItem,
+  ProjectInfoLabel,
+  ProjectInfoValue,
+  TechStack,
+  TechTag,
+  RoleList,
+  RoleItem,
+  EducationSection,
+  EducationItem,
+  EducationDate,
+  EducationContent,
+  EducationTitle,
+  EducationSubTitle,
+  EducationDetail,
+  EducationOrg,
+  GradeText
 } from './styles';
 
 export default function Home() {
+  const projects = [
+    {
+      title: 'ARTMEE - 전시회 정보 및 예약 관리 웹 사이트',
+      period: '2024.02.01 ~ 2024.02.22',
+      duration: '총 21일',
+      team: '총 4명 (팀장)',
+      contribution: '35%',
+      github: 'https://github.com/ddooing/soldesk_artme',
+      tech: ['HTML5/CSS3/JavaScript', 'Spring', 'Java', 'Oracle', 'Toss Payments Api'],
+      roles: [
+        '프로젝트 일정 관리 - 구글 Docs를 이용하여 팀원들의 할 일을 작성하고, 체크',
+        'Toss API를 사용한 결제 기능 - Toss 결제 API 문서를 참고하여 결제 요청과 요청에 대한 에러 처리, 결제 승인과 승인에 대한 에러 처리 작업을 수행',
+        'Session을 통한 장바구니 기능 - 사용자가 전시회 상품에 대해 session을 통해 장바구니를 추가하게끔 구현',
+        '결제 관리자 페이지 구현 - 관리자가 결제건을 조회하고 결제 날짜, 결제 수단 등 검색 조건에 따른 검색과 취소할 수 있도록 페이지를 구현'
+      ]
+    },
+    {
+      title: 'Photo Cabinet - 사진 분류 서비스를 제공하는 사진 작가의 포트폴리오 사이트',
+      period: '2023.03 ~ 2023.11',
+      duration: '총 8개월',
+      team: '총 4명',
+      contribution: '30%',
+      github: 'https://github.com/ddooing/Capstone-project',
+      tech: ['React.js', 'Node.js', 'Docker', 'MariaDB', 'Naver Login Api'],
+      roles: [
+        '반응형 웹 구현 - 데스크톱 모니터부터 태블릿, 모바일 기기에 맞는 화면을 제공',
+        '취향 테스트 구현 - 트리 형식의 퀴즈 페이지와 퀴즈 결과 페이지를 구현',
+        '게시글 조회 페이지 구현',
+        '이미지 분류 모델을 위한 데이터 전처리 - 이미지에 대한 유효성 검사 수행'
+      ]
+    }
+  ];
+
   return (
     <MainContainer>
       <ContentWrapper>
@@ -65,46 +120,78 @@ export default function Home() {
 
         
 
-        {/* 기존 섹션들 (학력, 교육/활동, 자격증) */}
-        <DetailSection>
+        {/* 학력 섹션 */}
+        <EducationSection>
           <SectionTitle>학력</SectionTitle>
-          <DetailItem>
-            <DetailTitle>신한대학교 소프트웨어융합학과</DetailTitle>
-            <DetailContent>
-              <div>졸업 | 4.0 / 4.5</div>
-              <DetailPeriod>2019.03 ~ 2024.02</DetailPeriod>
-            </DetailContent>
-          </DetailItem>
-        </DetailSection>
+          <EducationItem>
+            <EducationDate>2019.03 ~ 2024.02</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                신한대학교 (의정부)
+                <EducationSubTitle>소프트웨어융합학과</EducationSubTitle>
+              </EducationTitle>
+              <GradeText>졸업 | 4.0 / 4.5</GradeText>
+            </EducationContent>
+          </EducationItem>
+        </EducationSection>
 
-        <DetailSection>
-          <SectionTitle>교육/활동</SectionTitle>
-          <DetailItem>
-            <DetailTitle>빅데이터 활용 인공지능 기반 개인화 서비스 구축 개발자 과정</DetailTitle>
-            <DetailContent>
-              <div>960시간</div>
-              <DetailPeriod>2023.08 ~ 2024.03</DetailPeriod>
-            </DetailContent>
-          </DetailItem>
-        </DetailSection>
+        {/* 교육 섹션 */}
+        <EducationSection>
+          <SectionTitle>교육</SectionTitle>
+          <EducationItem>
+            <EducationDate>2023.08 ~ 2024.03</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                빅데이터 활용 인공지능 기반 개인화 서비스 구축 개발자 과정
+                <EducationOrg>솔데스크</EducationOrg>
+              </EducationTitle>
+              <EducationDetail>
+                Spring framework 기반 웹 개발에 있어 필요한 지식을 배우고 프로젝트를 통해 경험과 협업 경험을 쌓았습니다.
+              </EducationDetail>
+            </EducationContent>
+          </EducationItem>
+        </EducationSection>
 
-        <DetailSection>
+        {/* 자격증 섹션 */}
+        <EducationSection>
           <SectionTitle>자격증</SectionTitle>
-          <DetailItem>
-            <DetailTitle>정보처리기사</DetailTitle>
-            <DetailContent>
-              <div>한국산업인력공단</div>
-              <DetailPeriod>2023.06</DetailPeriod>
-            </DetailContent>
-          </DetailItem>
-          <DetailItem>
-            <DetailTitle>TOPCIT</DetailTitle>
-            <DetailContent>
-              <div>458/1000점 | 정보통신기획평가원</div>
-              <DetailPeriod>2023.10</DetailPeriod>
-            </DetailContent>
-          </DetailItem>
-        </DetailSection>
+          <EducationItem>
+            <EducationDate>2023.10</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                TOPCIT 458점 / 1000점
+                <EducationOrg>정보통신기획평가원</EducationOrg>
+              </EducationTitle>
+            </EducationContent>
+          </EducationItem>
+          <EducationItem>
+            <EducationDate>2023.06</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                정보처리기사
+                <EducationOrg>한국산업인력공단</EducationOrg>
+              </EducationTitle>
+            </EducationContent>
+          </EducationItem>
+          <EducationItem>
+            <EducationDate>2023.04</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                파이썬 프로그래밍 활용 능력 2급
+                <EducationOrg>한국정보인재개발원</EducationOrg>
+              </EducationTitle>
+            </EducationContent>
+          </EducationItem>
+          <EducationItem>
+            <EducationDate>2020.02</EducationDate>
+            <EducationContent>
+              <EducationTitle>
+                2종보통운전면허
+                <EducationOrg>경찰청</EducationOrg>
+              </EducationTitle>
+            </EducationContent>
+          </EducationItem>
+        </EducationSection>
 
         {/* 자기소개 섹션 */}
         <IntroductionSection>
@@ -155,6 +242,74 @@ export default function Home() {
           </IntroText>
           
         </DetailSection>
+
+        {/* 프로젝트 섹션 */}
+        <ProjectSection>
+          <SectionTitle>프로젝트</SectionTitle>
+          {projects.map((project, index) => (
+            <ProjectItem key={index}>
+              <ProjectTitle>{project.title}</ProjectTitle>
+
+              {/* 기간 */}
+              <ProjectSubSection>
+                <ProjectSubTitle>기간</ProjectSubTitle>
+                <ProjectInfo>
+                  <ProjectInfoItem>
+                    <ProjectInfoLabel>개발 기간</ProjectInfoLabel>
+                    <ProjectInfoValue>{project.period}</ProjectInfoValue>
+                  </ProjectInfoItem>
+                  <ProjectInfoItem>
+                    <ProjectInfoLabel>소요 기간</ProjectInfoLabel>
+                    <ProjectInfoValue>{project.duration}</ProjectInfoValue>
+                  </ProjectInfoItem>
+                </ProjectInfo>
+              </ProjectSubSection>
+
+              {/* 개발 인원 */}
+              <ProjectSubSection>
+                <ProjectSubTitle>개발 인원</ProjectSubTitle>
+                <ProjectInfo>
+                  <ProjectInfoItem>
+                    <ProjectInfoLabel>팀 구성</ProjectInfoLabel>
+                    <ProjectInfoValue>{project.team}</ProjectInfoValue>
+                  </ProjectInfoItem>
+                  <ProjectInfoItem>
+                    <ProjectInfoLabel>기여도</ProjectInfoLabel>
+                    <ProjectInfoValue>{project.contribution}</ProjectInfoValue>
+                  </ProjectInfoItem>
+                  <ProjectInfoItem>
+                    <ProjectInfoLabel>GitHub</ProjectInfoLabel>
+                    <ProjectInfoValue>
+                      <StyledLink href={project.github} target="_blank">
+                        {project.github}
+                      </StyledLink>
+                    </ProjectInfoValue>
+                  </ProjectInfoItem>
+                </ProjectInfo>
+              </ProjectSubSection>
+
+              {/* 사용 기술 */}
+              <ProjectSubSection>
+                <ProjectSubTitle>사용 기술</ProjectSubTitle>
+                <TechStack>
+                  {project.tech.map((tech, i) => (
+                    <TechTag key={i}>{tech}</TechTag>
+                  ))}
+                </TechStack>
+              </ProjectSubSection>
+
+              {/* 역할 */}
+              <ProjectSubSection>
+                <ProjectSubTitle>주요 역할</ProjectSubTitle>
+                <RoleList>
+                  {project.roles.map((role, i) => (
+                    <RoleItem key={i}>{role}</RoleItem>
+                  ))}
+                </RoleList>
+              </ProjectSubSection>
+            </ProjectItem>
+          ))}
+        </ProjectSection>
 
       </ContentWrapper>
     </MainContainer>

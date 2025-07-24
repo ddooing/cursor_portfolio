@@ -154,3 +154,172 @@ export const DetailPeriod = styled.span`
   color: #888;
   font-size: 0.9rem;
 `; 
+
+export const ProjectSection = styled.div`
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const ProjectItem = styled.div`
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+  
+  &:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+`;
+
+export const ProjectTitle = styled.h3`
+  font-size: 1.4rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+`;
+
+export const ProjectSubSection = styled.div`
+  margin-bottom: 1.5rem;
+`;
+
+export const ProjectSubTitle = styled.h4`
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 1em;
+    background-color: #007bff;
+    margin-right: 0.5rem;
+    border-radius: 2px;
+  }
+`;
+
+export const ProjectInfo = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #666;
+  line-height: 1.6;
+`;
+
+export const ProjectInfoItem = styled.div`
+  display: flex;
+  gap: 1rem;
+`;
+
+export const ProjectInfoLabel = styled.span`
+  font-weight: 600;
+  color: #555;
+  min-width: 100px;
+`;
+
+export const ProjectInfoValue = styled.span`
+  color: #666;
+`;
+
+export const TechStack = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+`;
+
+export const TechTag = styled.span`
+  display: inline-block;
+  padding: 0.3rem 0.8rem;
+  background-color: #f0f0f0;
+  color: #666;
+  border-radius: 15px;
+  font-size: 0.9rem;
+`;
+
+export const RoleList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 0;
+`;
+
+export const RoleItem = styled.li`
+  color: #666;
+  padding: 0.5rem 0;
+  position: relative;
+  padding-left: 1.2rem;
+  line-height: 1.6;
+
+  &:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #007bff;
+  }
+`; 
+
+export const EducationSection = styled.div`
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+`;
+
+export const EducationItem = styled.div`
+  display: flex;
+  margin-bottom: 1.5rem;
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+`;
+
+export const EducationDate = styled.div`
+  width: 180px;
+  flex-shrink: 0;
+  color: #666;
+`;
+
+export const EducationContent = styled.div`
+  flex: 1;
+`;
+
+export const EducationTitle = styled.div`
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+`;
+
+export const EducationSubTitle = styled.div`
+  color: #666;
+  font-size: 0.9rem;
+  margin-left: 0.5rem;
+`;
+
+export const EducationDetail = styled.div`
+  color: #666;
+  font-size: 0.9rem;
+  margin-top: 0.3rem;
+`;
+
+export const EducationOrg = styled.span`
+  color: #888;
+  font-size: 0.9rem;
+  &:before {
+    content: "•";
+    margin: 0 0.5rem;
+  }
+`;
+
+export const GradeText = styled.div`
+  color: #666;
+  margin-top: 0.2rem;
+  font-size: 0.9rem;
+`; 
