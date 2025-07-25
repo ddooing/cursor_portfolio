@@ -42,13 +42,16 @@ import {
   EducationSubTitle,
   EducationDetail,
   EducationOrg,
-  GradeText
+  GradeText,
+  ProjectImageContainer
 } from './styles';
+import Image from 'next/image';
 
 export default function Home() {
   const projects = [
     {
       title: 'ARTMEE - 전시회 정보 및 예약 관리 웹 사이트',
+      image: '/projects/artme.png',
       period: '2024.02.01 ~ 2024.02.22',
       duration: '총 21일',
       team: '총 4명 (팀장)',
@@ -64,6 +67,7 @@ export default function Home() {
     },
     {
       title: 'Photo Cabinet - 사진 분류 서비스를 제공하는 사진 작가의 포트폴리오 사이트',
+      image: '/projects/photocabinet.png',
       period: '2023.03 ~ 2023.11',
       duration: '총 8개월',
       team: '총 4명',
@@ -86,7 +90,13 @@ export default function Home() {
           <ProfileCard>
             <ProfileSection>
               <ProfileImage>
-                프로필 사진
+                <Image 
+                  src="/projects/이력서.jpg"
+                  alt="프로필 사진"
+                  width={150}
+                  height={200}
+                  priority
+                />
               </ProfileImage>
             </ProfileSection>
 
@@ -249,6 +259,18 @@ export default function Home() {
           {projects.map((project, index) => (
             <ProjectItem key={index}>
               <ProjectTitle>{project.title}</ProjectTitle>
+              
+              {project.image && (
+                <ProjectImageContainer>
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    width={800}
+                    height={300}
+                    priority
+                  />
+                </ProjectImageContainer>
+              )}
 
               {/* 기간 */}
               <ProjectSubSection>

@@ -37,14 +37,21 @@ export const ProfileSection = styled.div`
 `;
 
 export const ProfileImage = styled.div`
-  width: 200px;
-  height: 250px;
+  width: 150px;
+  height: 200px;
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 10px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export const ProfileTitle = styled.h2`
@@ -171,6 +178,22 @@ export const ProjectItem = styled.div`
     margin-bottom: 0;
     padding-bottom: 0;
     border-bottom: none;
+  }
+`;
+
+export const ProjectImageContainer = styled.div`
+  width: 38%;
+  //height: 300px;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  overflow: hidden;
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #f8f8f8;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
   }
 `;
 
