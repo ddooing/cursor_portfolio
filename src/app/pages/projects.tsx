@@ -7,7 +7,6 @@ export default function Projects() {
       period: '2024.02.01 ~ 2024.02.22 (총 21일)',
       github: 'https://github.com/ddooing/soldesk_artme',
       team: '총 4명 (팀장)',
-      contribution: '35%',
       tech: ['HTML5/CSS3/JavaScript', 'Spring', 'Java', 'Oracle', 'Toss Payments Api'],
       roles: [
         '프로젝트 일정 관리 - 구글 Docs를 이용하여 팀원들의 할 일을 작성하고, 체크',
@@ -18,7 +17,7 @@ export default function Projects() {
     },
     {
       title: 'Photo Cabinet - 사진 분류 서비스를 제공하는 사진 작가의 포트폴리오 사이트',
-      period: '2023.03 ~ 2023.11 (총 8개월)',
+      period: '2023.08 ~ 2023.11 (총 3개월)',
       github: 'https://github.com/ddooing/Capstone-project',
       team: '총 4명',
       contribution: '30%',

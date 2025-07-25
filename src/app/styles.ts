@@ -77,13 +77,15 @@ export const InfoRow = styled.div`
 
 export const InfoLabel = styled.div`
   width: 100px;
-  font-weight: bold;
+  font-weight: 500;
   color: #333;
+  letter-spacing: -0.01em;
 `;
 
 export const InfoValue = styled.div`
   flex: 1;
-  color: #666;
+  color: #555;
+  letter-spacing: -0.01em;
 `;
 
 export const StyledLink = styled.a`
@@ -96,14 +98,14 @@ export const StyledLink = styled.a`
 `;
 
 export const BriefIntro = styled.div`
-
-  color: #666;
+  color: #555;
   font-size: 1.1rem;
-  line-height: 1.6;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
   
   strong {
     color: #333;
-    font-weight: 600;
+    font-weight: 700;
   }
 `;
 
@@ -115,11 +117,14 @@ export const IntroductionSection = styled.div`
 `;
 
 export const SectionTitle = styled.h2`
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: #333;
-  margin-bottom: 1rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #007bff;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  //border-bottom: 3px solid #888;
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: -0.03em;
 `;
 
 export const IntroText = styled.p`
@@ -201,6 +206,8 @@ export const ProjectTitle = styled.h3`
   font-size: 1.4rem;
   color: #333;
   margin-bottom: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
 `;
 
 export const ProjectSubSection = styled.div`
@@ -213,39 +220,72 @@ export const ProjectSubTitle = styled.h4`
   margin-bottom: 1rem;
   display: flex;
   align-items: center;
-  
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  /*
   &:before {
     content: "";
     display: inline-block;
     width: 4px;
     height: 1em;
-    background-color: #007bff;
+    background-color: #000;
     margin-right: 0.5rem;
     border-radius: 2px;
   }
+  */
 `;
 
 export const ProjectInfo = styled.div`
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 1rem;
   color: #666;
   line-height: 1.6;
+  margin: 1.5rem 0;
+`;
+
+export const ProjectInfoRow = styled.div`
+  display: flex;
+  gap: 2rem;
 `;
 
 export const ProjectInfoItem = styled.div`
   display: flex;
-  gap: 1rem;
+  align-items: center;
+  gap: 0.5rem;
 `;
 
 export const ProjectInfoLabel = styled.span`
-  font-weight: 600;
+  font-weight: 500;
   color: #555;
-  min-width: 100px;
+  white-space: nowrap;
+  letter-spacing: -0.01em;
+  
+  &:after {
+    content: ":";
+    margin-right: 4px;
+  }
 `;
 
 export const ProjectInfoValue = styled.span`
   color: #666;
+  letter-spacing: -0.01em;
+`;
+
+export const ProjectGithub = styled.div`
+  margin: 1rem 0 2rem 0;
+  
+  a {
+    color: #0066cc;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 export const TechStack = styled.div`
@@ -276,12 +316,24 @@ export const RoleItem = styled.li`
   position: relative;
   padding-left: 1.2rem;
   line-height: 1.6;
+  margin-bottom: 1rem;
 
   &:before {
     content: "•";
     position: absolute;
     left: 0;
     color: #007bff;
+  }
+
+  .role-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 0.3rem;
+  }
+
+  .role-description {
+    color: #666;
+    padding-left: 1rem;
   }
 `; 
 
