@@ -52,8 +52,8 @@ export default function Profile() {
             <Image 
               src="/projects/이력서.jpg"
               alt="프로필 사진"
-              width={150}
-              height={200}
+              width={250}
+              height={300}
               priority
             />
           </ProfileImage>
@@ -63,7 +63,7 @@ export default function Profile() {
           <InfoRowComponent label="🗣️ 이름" value="임승연" />
           <InfoRowComponent label="📅 생년월일" value="2000.12.5 (24세)" />
           <InfoRowComponent label="📍 Address" value="서울시 강동구 상암로 23길" />
-          <InfoRowComponent label="📱 Mobile" value="010-9329-0000" />
+          <InfoRowComponent label="📱 Mobile" value="010-9329-7729" />
           <InfoRowComponent 
             label="⚙️ Github" 
             value="https://github.com/ddooing"

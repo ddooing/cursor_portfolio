@@ -24,6 +24,7 @@ export const TopSection = styled.div`
 `;
 
 export const ProfileCard = styled.div`
+align-items: center;
   display: flex;
   gap: 2rem;
   padding-bottom: 1.5rem;
@@ -32,13 +33,13 @@ export const ProfileCard = styled.div`
 `;
 
 export const ProfileSection = styled.div`
-  width: 200px;
+  //width: 200px;
   flex-shrink: 0;
 `;
 
 export const ProfileImage = styled.div`
-  width: 150px;
-  height: 200px;
+  width: 250px;
+  height: 300px;
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
