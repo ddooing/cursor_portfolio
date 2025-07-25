@@ -3,9 +3,13 @@ import styled from 'styled-components';
 export const MainContainer = styled.main`
   min-height: 100vh;
   padding: 2rem;
-  background-color: #f9f9f9;
+  background-color: #f5f5f7;
   display: flex;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+  }
 `;
 
 export const ContentWrapper = styled.div`
@@ -13,28 +17,55 @@ export const ContentWrapper = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2.5rem;
+
+  @media (max-width: 768px) {
+    gap: 2rem;
+  }
 `;
 
 export const TopSection = styled.div`
   background-color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
 `;
 
 export const ProfileCard = styled.div`
-align-items: center;
   display: flex;
-  gap: 2rem;
-  padding-bottom: 1.5rem;
+  gap: 3rem;
+  padding-bottom: 2rem;
   border-bottom: 1px solid #eee;
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    text-align: center;
+  }
 `;
 
 export const ProfileSection = styled.div`
-  //width: 200px;
+  width: 250px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1024px) {
+    width: 200px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 250px;
+  }
 `;
 
 export const ProfileImage = styled.div`
@@ -53,6 +84,21 @@ export const ProfileImage = styled.div`
     height: 100%;
     object-fit: cover;
   }
+
+  @media (max-width: 1024px) {
+    width: 200px;
+    height: 240px;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    max-width: 250px;
+    height: 300px;
+  }
+
+  @media (max-width: 480px) {
+    height: 240px;
+  }
 `;
 
 export const ProfileTitle = styled.h2`
@@ -67,6 +113,10 @@ export const InfoSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 1rem;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 export const InfoRow = styled.div`
@@ -74,13 +124,23 @@ export const InfoRow = styled.div`
   align-items: center;
   padding: 0.8rem;
   border-bottom: 1px solid #eee;
+
+  @media (max-width: 768px) {
+    padding: 0.6rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
 `;
 
 export const InfoLabel = styled.div`
   width: 100px;
-  font-weight: 500;
+  font-weight: bold;
   color: #333;
-  letter-spacing: -0.01em;
+
+  @media (max-width: 768px) {
+    width: auto;
+    margin-bottom: 0.2rem;
+  }
 `;
 
 export const InfoValue = styled.div`
@@ -108,13 +168,23 @@ export const BriefIntro = styled.div`
     color: #333;
     font-weight: 700;
   }
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 `;
 
 export const IntroductionSection = styled.div`
   background-color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
 `;
 
 export const SectionTitle = styled.h2`
@@ -122,10 +192,16 @@ export const SectionTitle = styled.h2`
   color: #333;
   margin-bottom: 1.5rem;
   padding-bottom: 0.8rem;
-  //border-bottom: 3px solid #888;
+  border-bottom: 3px solid #888;
   display: inline-block;
   font-weight: 700;
   letter-spacing: -0.03em;
+
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.6rem;
+  }
 `;
 
 export const IntroText = styled.p`
@@ -136,9 +212,14 @@ export const IntroText = styled.p`
 
 export const DetailSection = styled.div`
   background-color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
 `;
 
 export const DetailItem = styled.div`
@@ -170,9 +251,14 @@ export const DetailPeriod = styled.span`
 
 export const ProjectSection = styled.div`
   background-color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
 `;
 
 export const ProjectItem = styled.div`
@@ -189,7 +275,6 @@ export const ProjectItem = styled.div`
 
 export const ProjectImageContainer = styled.div`
   width: 38%;
-  //height: 300px;
   margin-bottom: 1.5rem;
   border-radius: 10px;
   overflow: hidden;
@@ -199,7 +284,10 @@ export const ProjectImageContainer = styled.div`
     height: 100%;
     object-fit: contain;
     background-color: #f8f8f8;
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -209,6 +297,11 @@ export const ProjectTitle = styled.h3`
   margin-bottom: 1.5rem;
   font-weight: 700;
   letter-spacing: -0.02em;
+
+  @media (max-width: 768px) {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
 `;
 
 export const ProjectSubSection = styled.div`
@@ -234,6 +327,11 @@ export const ProjectSubTitle = styled.h4`
     border-radius: 2px;
   }
   */
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+  }
 `;
 
 export const ProjectInfo = styled.div`
@@ -243,11 +341,20 @@ export const ProjectInfo = styled.div`
   color: #666;
   line-height: 1.6;
   margin: 1.5rem 0;
+
+  @media (max-width: 768px) {
+    margin: 1rem 0;
+  }
 `;
 
 export const ProjectInfoRow = styled.div`
   display: flex;
   gap: 2rem;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 1rem;
+  }
 `;
 
 export const ProjectInfoItem = styled.div`
@@ -287,22 +394,46 @@ export const ProjectGithub = styled.div`
       text-decoration: underline;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 0.8rem 0 1.5rem 0;
+    
+    a {
+      font-size: 0.9rem;
+    }
+  }
 `;
 
 export const TechStack = styled.div`
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
-  margin-top: 0.5rem;
+  gap: 0.8rem;
+  margin-top: 1rem;
+
+  @media (max-width: 768px) {
+    gap: 0.5rem;
+  }
 `;
 
 export const TechTag = styled.span`
   display: inline-block;
-  padding: 0.3rem 0.8rem;
-  background-color: #f0f0f0;
-  color: #666;
-  border-radius: 15px;
-  font-size: 0.9rem;
+  padding: 0.5rem 1rem;
+  background-color: #f0f7ff;
+  color: #0066cc;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  
+  &:hover {
+    background-color: #e0f0ff;
+    transform: translateY(-2px);
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
 `;
 
 export const RoleList = styled.ul`
@@ -340,9 +471,14 @@ export const RoleItem = styled.li`
 
 export const EducationSection = styled.div`
   background-color: white;
-  border-radius: 15px;
-  padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+
+  @media (max-width: 768px) {
+    padding: 1.5rem;
+    border-radius: 15px;
+  }
 `;
 
 export const EducationItem = styled.div`
@@ -352,12 +488,22 @@ export const EducationItem = styled.div`
   &:last-child {
     margin-bottom: 0;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
 `;
 
 export const EducationDate = styled.div`
   width: 180px;
   flex-shrink: 0;
   color: #666;
+
+  @media (max-width: 768px) {
+    width: auto;
+    font-weight: 500;
+  }
 `;
 
 export const EducationContent = styled.div`
