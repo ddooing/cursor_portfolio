@@ -10,7 +10,7 @@ const notoSansKr = Noto_Sans_KR({
 });
 
 export const metadata: Metadata = {
-  title: '임승연 포트폴리오',
+  title: '임승연 이력서',
   description: '신입 웹 개발자 임승연의 포트폴리오입니다.',
 }
 
