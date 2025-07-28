@@ -31,10 +31,10 @@ const projects = [
     github: 'https://github.com/ddooing/soldesk_artme',
     tech: ['Spring', 'Java', 'Oracle','Eclipse','Docker','Toss Payments Api'],
     roles: [
-      '프로젝트 일정 관리 - 구글 Docs를 이용하여 팀원들의 할 일을 작성하고, 수시로 확인하였음',
+      '프로젝트 일정 관리 - 구글 Docs를 이용하여 팀원들의 할 일을 작성하고, 지속적으로 공유·확인함',
       '결제 기능 - Toss Payments API 공식 문서를 참고해 결제 기능을 구현하고, 결제 중 발생하는 에러에 대해서는 사용자에게 팝업 메시지로 보여줌',
       '장바구니 기능 - 사용자가 전시회에 대해 session을 통해 장바구니를 사용할 수 있도록 구현함',
-      '결제 관리자 페이지 구현 - 관리자가 결제건을 조회하고 결제 날짜, 결제 수단 등 검색 조건에 따른 검색과 결제 취소할 수 있도록 페이지를 구현함'
+      '결제 관리자 페이지 - 관리자가 결제 내역을 조회하고, 결제 날짜·결제 수단 등 검색 조건에 따른 조회 및 결제 취소할 수 있도록 페이지를 구현함'
     ]
   },
   {
@@ -45,13 +45,13 @@ const projects = [
     team: '총 4명',
     contribution: '30%',
     github: 'https://github.com/ddooing/Capstone-project',
-    tech: ['React', 'Node.js', 'Python','MariaDB','VS Code','Docker', 'Naver Login Api'],
+    tech: ['React', 'Node.js', 'Python','MariaDB','VS Code','Docker', 'Naver Login Api','KakaoShare Api'],
     roles: [
       '프론트엔드 - 컴포넌트 구조를 설계하고, 미디어쿼리를 통해 반응형 웹으로 구현',
       '헤더 사용자 표시 - 로그인 상태에 따라 헤더에서 사용자 아이콘과 닉네임을 조건부로 렌더링하고, 아이콘 클릭 시 로그인 여부에 따라 마이페이지·로그아웃 메뉴 또는 로그인 모달을 노출함.',
-      '취향 테스트 구현 - 트리 형식의 퀴즈 페이지와 퀴즈 결과 페이지를 구현',
-      '게시글 조회 - 게시글 조회 API와 조회 페이지 구현함',
-      '테스트 결과 공유 - 테스트 결과를 공유할 수 있도록 링크복사와 KakaoShare API 를 통해 카카오톡 공유 기능을 구현함.',
+      '취향 테스트 - 트리 형식의 퀴즈 페이지와 퀴즈 결과 페이지를 구현함',
+      '게시글 조회 - 게시글 조회 API와 조회 페이지를 구현함',
+      '테스트 결과 공유 - 테스트 결과를 링크 복사와 KakaoShare API를 활용해 공유할 수 있도록 구현함.',
       
     ]
   }

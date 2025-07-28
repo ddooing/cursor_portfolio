@@ -40,7 +40,7 @@ export default function Education() {
               <EducationOrg>솔데스크</EducationOrg>
             </EducationTitle>
             <EducationDetail>
-              Spring framework 기반 웹 개발에 있어 필요한 지식을 배우고 프로젝트를 통해 경험과 협업 경험을 쌓았습니다.
+              Spring framework 기반 웹 개발에 있어 필요한 지식을 배우고 프로젝트를 통해 실습과 협업 경험을 쌓았습니다.
             </EducationDetail>
           </EducationContent>
         </EducationItem>
