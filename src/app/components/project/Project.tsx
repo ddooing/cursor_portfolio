@@ -45,13 +45,13 @@ const projects = [
     team: '총 4명',
     contribution: '30%',
     github: 'https://github.com/ddooing/Capstone-project',
-    tech: ['React', 'Node.js', 'Python','MariaDB','VS Code','Docker', 'Naver Login Api','KakaoShare Api'],
+    tech: ['React', 'Node.js', 'Python','MariaDB','VS Code','Docker', 'Naver Login Api','Kakao Share Api'],
     roles: [
       '프론트엔드 - 컴포넌트 구조를 설계하고, 미디어쿼리를 통해 반응형 웹으로 구현',
       '헤더 사용자 표시 - 로그인 상태에 따라 헤더에서 사용자 아이콘과 닉네임을 조건부로 렌더링하고, 아이콘 클릭 시 로그인 여부에 따라 마이페이지·로그아웃 메뉴 또는 로그인 모달을 노출함.',
-      '취향 테스트 - 트리 형식의 퀴즈 페이지와 퀴즈 결과 페이지를 구현함',
+      '취향 테스트 - 트리 형식의 테스트 페이지와 퀴즈 결과 페이지를 구현함',
       '게시글 조회 - 게시글 조회 API와 조회 페이지를 구현함',
-      '테스트 결과 공유 - 테스트 결과를 링크 복사와 KakaoShare API를 활용해 공유할 수 있도록 구현함.',
+      '테스트 결과 공유 - 테스트 결과를 링크 복사와 Kakao Share API를 활용해 공유할 수 있도록 구현함.',
       
     ]
   }
