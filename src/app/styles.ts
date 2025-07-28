@@ -52,25 +52,25 @@ export const ProfileCard = styled.div`
 `;
 
 export const ProfileSection = styled.div`
-  width: 250px;
+  width: 180px;
   flex-shrink: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @media (max-width: 1024px) {
-    width: 200px;
+    width: 160px;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 250px;
+    max-width: 180px;
   }
 `;
 
 export const ProfileImage = styled.div`
-  width: 250px;
-  height: 300px;
+  width: 180px;
+  height: 240px;
   background-color: #f0f0f0;
   display: flex;
   justify-content: center;
@@ -86,18 +86,18 @@ export const ProfileImage = styled.div`
   }
 
   @media (max-width: 1024px) {
-    width: 200px;
-    height: 240px;
+    width: 160px;
+    height: 213px;
   }
 
   @media (max-width: 768px) {
     width: 100%;
-    max-width: 250px;
-    height: 300px;
+    max-width: 180px;
+    height: 240px;
   }
 
   @media (max-width: 480px) {
-    height: 240px;
+    height: 200px;
   }
 `;
 
