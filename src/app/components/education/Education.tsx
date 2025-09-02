@@ -44,6 +44,20 @@ export default function Education() {
             </EducationDetail>
           </EducationContent>
         </EducationItem>
+
+        <EducationItem>
+          <EducationDate>2025.08.18 ~ 8.20 
+            <br/>(20시간)</EducationDate>
+          <EducationContent>
+            <EducationTitle>
+            소프트웨어 아키텍처 과정
+              <EducationOrg>대구디지털혁신진흥원(DIP)</EducationOrg>
+            </EducationTitle>
+            <EducationDetail>
+            Spring Boot 기반 미니 프로젝트를 기획·구현하고 AWS 환경에 배포하여 서버 운영까지 경험을 쌓았습니다.
+            </EducationDetail>
+          </EducationContent>
+        </EducationItem>
       </EducationSection>
 
       {/* 자격증 섹션 */}
