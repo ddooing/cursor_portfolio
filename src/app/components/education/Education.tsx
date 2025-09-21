@@ -48,15 +48,15 @@ export default function Education() {
         <EducationItem>
           <EducationDate>2025.08.18 ~ 8.20 
             <br/>(20시간)</EducationDate>
-          <EducationContent>
+          <EducationContent>                                                                                                                                                                                                                                                                                                                                                                          
             <EducationTitle>
             소프트웨어 아키텍처 과정
               <EducationOrg>대구디지털혁신진흥원(DIP)</EducationOrg>
             </EducationTitle>
-            <EducationDetail>
+            <EducationDetail>                                                                 
             Spring Boot 기반 미니 프로젝트를 기획·구현하고 AWS 환경에 배포하여 서버 운영까지 경험을 쌓았습니다.
             </EducationDetail>
-          </EducationContent>
+          </EducationContent>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         </EducationItem>
       </EducationSection>
 
@@ -64,17 +64,35 @@ export default function Education() {
       <EducationSection>
         <SectionTitle>📚 자격증</SectionTitle>
         <EducationItem>
+          <EducationDate>2025.09</EducationDate>
+          <EducationContent>
+            <EducationTitle>
+              SQLD
+              <EducationOrg>한국산업인력공단</EducationOrg>
+            </EducationTitle>                                   
+          </EducationContent>
+        </EducationItem>
+        <EducationItem>
+          <EducationDate>2023.06</EducationDate>
+          <EducationContent>                                        
+            <EducationTitle>
+              정보처리기사
+              <EducationOrg>한국산업인력공단</EducationOrg>
+            </EducationTitle>
+          </EducationContent>
+        </EducationItem>
+        <EducationItem>
           <EducationDate>2023.10</EducationDate>
           <EducationContent>
             <EducationTitle>
               TOPCIT 458점 / 1000점
               <EducationOrg>정보통신기획평가원</EducationOrg>
-            </EducationTitle>
+            </EducationTitle>                                   
           </EducationContent>
         </EducationItem>
         <EducationItem>
           <EducationDate>2023.06</EducationDate>
-          <EducationContent>
+          <EducationContent>                                        
             <EducationTitle>
               정보처리기사
               <EducationOrg>한국산업인력공단</EducationOrg>
